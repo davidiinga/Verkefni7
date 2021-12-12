@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body{
+    display: grid;
+    grid-template-rows:auto auto auto auto auto auto auto auto auto; 
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "sky sky"
+    "h h"
+    "m1 m1"
+    "vid1 m2"
+    "xi xi"
+    "xitext1 xitext2"
+    "f f"
+    "c c";
+}
+
+body{
+    margin:0px;
+    background-image:linear-gradient(#ff0000, #ff4800);
+    font-family:Fira Sans;
+}
+
+.sky{
+    grid-area:sky;
+    border:solid yellow;
+    background-color:red;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    position: sticky;
+    top: 0;
+}
+
+.sky > a{
+    background-color:#ca0000;
+    color:yellow;
+    text-align:center;
+    padding: 10px;
+    margin:10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    background-color:#660033;
+  }
+  
+  a:active {
+    background-color: black;
+}
+
+.head{
+    grid-area:h;
+    padding-bottom:200px;
+    padding-top:140px;
+    background-image:url(china-man1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.title1{
+    height:400px;
+    width:400px;
+    border: solid yellow ;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  font-size:200%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.mid1{
+    grid-area:m1;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    border:solid yellow;
+}
+
+.text{
+    padding-left:150px;
+    padding-right:150px;
+}
+
+.mid1 > img{
+    max-width: 15%;
+    height: auto;
+}
+
+.mid2{
+    grid-area:m2;
+    border:solid yellow;
+    border-top:0px;
+    border-left:0px;
+    border-bottom:0px;
+    padding:10px;
+}
+
+.vid1{
+    grid-area:vid1;
+    border:solid yellow;
+    border-top:0px;
+    border-bottom:0px;
+}
+
+.xing{
+    grid-area:xi;
+    padding-bottom:200px;
+    padding-top:140px;
+    border-top:solid yellow;
+    background-image:url(zhong_xina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+.title2{
+    height:400px;
+    width:400px;
+    border: solid yellow ;
+  background-color:red;
+  border-radius: 50%;
+  display: inline-block;
+  text-align:center;
+  font-size:200%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+
+}
+
+.xitext1{
+    grid-area:xitext1;
+    border:solid yellow;
+    text-align: center;
+    padding:10px;
+}
+
+.xitext2{
+    grid-area:xitext2;
+    border:solid yellow;
+    text-align: center;
+    border-left:0px;
+    padding:10px;
+}
+
+.feet{
+    grid-area:f;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.colum{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+.maps{
+    padding:10px;
+}
+
+.copy{
+    grid-area:c;
+    text-align:center;
+}
